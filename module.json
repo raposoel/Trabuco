@@ -1,0 +1,98 @@
+{
+  "id": "coracao-de-trabuco",
+  "title": "Coração de Trabuco",
+  "version": "1.0.2",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/ranger.js",
+    "scripts/guardian.js",
+    "scripts/seraph.js",
+    "scripts/rogue.js",
+    "scripts/warrior.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "daggerheart",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.4.4"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Luiz Nogueira (Raposo El)",
+      "discord": "luizrealoficial",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "personagem",
+      "label": "Opções de Personagem",
+      "path": "packs/personagem",
+      "type": "Item",
+      "system": "daggerheart",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "armas",
+      "label": "Armas de Fogo",
+      "path": "packs/armas",
+      "type": "Item",
+      "system": "daggerheart",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "adveamb",
+      "label": "Ambientes e Adversários",
+      "path": "packs/adveamb",
+      "type": "Actor",
+      "system": "daggerheart",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "regras",
+      "label": "Regras",
+      "path": "packs/regras",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "daggerheart"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Coração de Trabuco",
+      "color": "#cb9651",
+      "sorting": "a",
+      "packs": [
+        "adveamb",
+        "armas",
+        "personagem",
+	"regras"
+      ],
+      "folders": []
+    }
+  ],
+  "url": "https://github.com/raposoel/Trabuco",
+  "manifest": "https://raw.githubusercontent.com/raposoel/Trabuco/refs/heads/main/module.json",
+  "download": "https://codeload.github.com/raposoel/Trabuco/zip/main",
+  "flags": {}
+}

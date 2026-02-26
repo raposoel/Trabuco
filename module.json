@@ -1,17 +1,13 @@
 {
   "id": "coracao-de-trabuco",
   "title": "Coração de Trabuco",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
   },
   "esmodules": [
-    "scripts/ranger.js",
-    "scripts/guardian.js",
-    "scripts/seraph.js",
-    "scripts/rogue.js",
-    "scripts/warrior.js"
+    "scripts/boom.js"
   ],
   "relationships": {
     "systems": [
@@ -70,11 +66,22 @@
       "label": "Regras",
       "path": "packs/regras",
       "type": "JournalEntry",
+      "system": "daggerheart",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "daggerheart"
+      }
+    },
+    {
+      "name": "macro",
+      "label": "Macros",
+      "path": "packs/macro",
+      "type": "Macro",
+      "system": "daggerheart",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -86,7 +93,8 @@
         "adveamb",
         "armas",
         "personagem",
-	"regras"
+        "regras",
+        "macro"
       ],
       "folders": []
     }
@@ -94,5 +102,6 @@
   "url": "https://github.com/raposoel/Trabuco",
   "manifest": "https://raw.githubusercontent.com/raposoel/Trabuco/refs/heads/main/module.json",
   "download": "https://codeload.github.com/raposoel/Trabuco/zip/main",
+  "description": "Opções para Faroeste.",
   "flags": {}
 }
